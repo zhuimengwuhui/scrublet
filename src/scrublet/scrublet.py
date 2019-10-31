@@ -408,7 +408,7 @@ class Scrublet():
                 else:
                     neighbor_parents.append([])
             self.doublet_neighbor_parents_ = np.array(neighbor_parents)
-        return
+        return self.doublet_neighbor_parents_
     
     def call_doublets(self, threshold=None, verbose=True):
         ''' Call trancriptomes as doublets or singlets
